@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(249, 246, 246, 0.87);
+  background-color: #0e0e0e;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -66,3 +66,55 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Add styles for the task cards */
+.add-task-btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task-card {
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition on hover */
+}
+
+.task-card:hover {
+  transform: translateY(-5px); /* Card lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.task-card img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.task-card .card-title {
+  font-size: 1.2rem; /* Title font size */
+  font-weight: bold;
+}
+
+.task-card .card-text {
+  font-size: 1rem;
+  color: #555; /* Soft text color */
+}
+
+.task-card .btn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  color: white;
+}
+
+.task-card .btn:hover {
+  background-color: #0056b3; /* Darker button on hover */
+}
+
+/* Spacing between the cards */
+.container {
+  padding: 30px 0;
+}
+
