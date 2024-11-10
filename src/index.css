@@ -1,120 +1,56 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* App.css */
 
-  color-scheme: light dark;
-  color: rgba(249, 246, 246, 0.87);
-  background-color: #0e0e0e;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Add a bit of padding around the container */
+.container {
+  padding: 20px;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-/* Add styles for the task cards */
+/* Style the add task button */
 .add-task-btn-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
+.add-task-btn {
+  font-size: 1.2rem;
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+
+.add-task-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Task Card Styles */
 .task-card {
-  border: 1px solid #ddd; /* Light border */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition on hover */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
 }
 
 .task-card:hover {
-  transform: translateY(-5px); /* Card lift effect */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.05);
 }
 
-.task-card img {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.task-card .card-title {
-  font-size: 1.2rem; /* Title font size */
+.task-card-title {
+  font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.task-card .card-text {
+.task-card-desc {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
   font-size: 1rem;
-  color: #555; /* Soft text color */
+  padding: 8px 16px;
 }
 
-.task-card .btn {
-  width: 100%;
-  margin-top: 10px;
-  background-color: #007bff; /* Primary button color */
-  border: none;
-  color: white;
+button:hover {
+  cursor: pointer;
 }
-
-.task-card .btn:hover {
-  background-color: #0056b3; /* Darker button on hover */
-}
-
-/* Spacing between the cards */
-.container {
-  padding: 30px 0;
-}
-
